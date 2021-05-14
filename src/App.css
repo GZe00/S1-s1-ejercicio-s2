@@ -1,38 +1,61 @@
-.App {
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.App{
+  font-family: sans-serif;
   text-align: center;
+  display: grid;
+  gap: 2%;
+  width: 90%;
+  max-width: 1000px;
+  margin: 35px auto;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, auto);
+  grid-template-areas:
+    "Perfil Intereses Aprender Expectativas"
+    "Hobbies";
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+body {
+  background-color: #f2f2f2f2;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Perfil {
+  background-color: rgb(133, 133, 250);
+  color: rgb(6, 31, 77);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.Intereses {
+  background-color: rgb(147, 247, 142);
+  color: rgb(47, 89, 6);
+}
+.Aprender {
+  background-color: rgb(240, 109, 109);
+  color: rgb(107, 6, 26);
 }
 
-.App-link {
-  color: #61dafb;
+.Expectativas {
+  background-color: rgb(242, 248, 120);
+  color: rgb(69, 70, 2);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Hobbies {
+  background-color: rgb(245, 136, 227);
+  color: darkorchid;
+}
+
+div {
+  border-radius: 4px;
+}
+
+h2{
+  margin-bottom: 10%;
+  padding: 15px;
+}
+
+p {
+  padding: 5px;
 }
